@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title -->
+    <title> Blood Pressure </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/logo3.png" type="image/x-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/animate-3.7.0.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" href="../assets/fonts/flat-icon/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="../assets/css/owl-carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+	
+     <style>
+	    
+        .banner-area.about-page{background-image:url("../assets/images/breathing/10.jpg") !important;
+                                    position:relative;
+                                    z-index:1}  
+/*---------------------- the table / in the bottom of the page -----------------------------*/
+
+	td { font-size: 20px ;
+	      color: #000000 ;
+	      padding-left: 50px;
+	      padding-right: 50px;}
+	td span { color:#2f7a0e ;}
+	
+
+/*-------------------------- the content of the page --------------------------------------------*/	
+	label {font-size: 22px ;
+	       margin-right: 15px;}
+	
+     </style>  
+	 
+	 <script>
+
+        function start(){
+            
+			//------------------------- blood_pressure -------------------------
+            var bt = document.getElementById("cal");
+            bt.addEventListener("click",blood_pressure,false);
+			
+
+        }// end star function
+         
+        function blood_pressure(){
+            // these numbers and informations are from -----> https://www.webteb.com
+            
+            
+            var age = parseInt(document.getElementById("age").value)  ;
+            var normal = document.getElementById("normal");
+            var min = document.getElementById("min");
+            var max = document.getElementById("max");
+            var hint = document.getElementById("hint");
+            
+               
+    
+	    
+	     if (age == 18 || age == 19  ){
+                normal.setAttribute("value" , "117/77")
+                min.setAttribute("value" , "105/73")
+                max.setAttribute("value" , "120/81")
+                 hint.innerHTML = "<span style='color : red '></span>"
+               }
+             
+             else if (age >= 18 && age <= 24) {
+               normal.setAttribute("value" , "120/79")
+               min.setAttribute("value" , "108/75")
+               max.setAttribute("value" , "132/83")
+               hint.innerHTML = "<span style='color : red '></span>"
+             }
+	     else if (age >= 25 && age <= 29) {
+               normal.setAttribute("value" , "121/80")
+               min.setAttribute("value" , "109/76")
+               max.setAttribute("value" , "133/29")
+               hint.innerHTML = "<span style='color : red '>If your blood pressure is more than 133/84 you need to see a doctor</span>"
+               
+             }
+              else if (age >= 30 && age <= 34) {
+               normal.setAttribute("value" , "122/81")
+               min.setAttribute("value" , "110/77")
+               max.setAttribute("value" , "134/85")
+               hint.innerHTML = "<span style='color : red '></span>"
+             }
+              else if (age >= 35 && age <= 39) {
+               normal.setAttribute("value" , "123/82")
+               min.setAttribute("value" , "111/78")
+               max.setAttribute("value" , "135/86")
+               hint.innerHTML = "<span style='color : red '>If your blood pressure is more than 135/86 you need to see a doctor</span>"
+               
+             }
+             else if (age >= 40 && age <= 44) {
+               normal.setAttribute("value" , "125/83")
+               min.setAttribute("value" , "112/79")
+               max.setAttribute("value" , "137/87")
+                hint.innerHTML = "<span style='color : red '></span>"
+             }
+              else if (age >= 45 && age <= 49) {
+               normal.setAttribute("value" , "127/84")
+               min.setAttribute("value" , "115/80")
+               max.setAttribute("value" , "139/88")
+                hint.innerHTML = "<span style='color : red '></span>"
+        
+             }
+             else if (age >= 50 && age <= 54) {
+               normal.setAttribute("value" , "129/85")
+               min.setAttribute("value" , "116/81")
+               max.setAttribute("value" , "142/89")
+               hint.innerHTML = "<span style='color : red '>If your blood pressure is more than 142/89 you need to see a doctor</span>"
+               
+             }
+             
+             else if (age >= 55 && age <= 59) {
+               normal.setAttribute("value" , "131/86")
+               min.setAttribute("value" , "118/82")
+               max.setAttribute("value" , "144/90")
+                hint.innerHTML = "<span style='color : red '></span>"
+        
+             }
+              else if (age >= 60 && age <= 64) {
+               normal.setAttribute("value" , "134/87")
+               min.setAttribute("value" , "112/83")
+               max.setAttribute("value" , "147/91")
+                hint.innerHTML = "<span style='color : red '></span>"
+        
+             }
+             else {
+                 normal.setAttribute("value" , "--")
+               min.setAttribute("value" , "--")
+               max.setAttribute("value" , "--") 
+                
+             }
+     
+      
+            
+            
+           
+            
+            }//end blood_pressure function
+			
+			
+         
+        window.addEventListener("load",start,false);
+        
+    </script>
+</head>
+
+
+<body>
+ <!-- Preloader Starts -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Area Starts -->
+<header class="header-area main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo-area">
+                        <a><img src="../assets/images/logo1.jpeg" alt="logo" width= 150px height=60px alt="logo" style="margin-top:15px"></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="custom-navbar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>  
+                    <div class="main-menu">
+                        <ul>
+                            <li class="active" ><a href="../home.html"  style="font-size: 18px; color: #2f7a0e ; padding:7px">home</a></li>
+                            <li><a href="../about.html" style="font-size: 18px;color: #2f7a0e ;  padding:7px">about us</a></li>
+                           
+                            <!--<li><a href="trainers.html">trainers</a></li>-->
+                            <li><a href="#" style="font-size: 18px;color: #2f7a0e" ;  padding:7px >blog</a>
+                                <ul class="sub-menu">
+                                    <li><a href="../tips nutration.html"  style="font-size: 16px;color: #2f7a0e" > tips nutrition </a></li>
+                                    <li><a style="../font-size: 16px;color: #2f7a0e"> Food warnings </a></li>
+				                    <li><a href="../food.html" style="font-size: 16px;color: #2f7a0e"> Food Recipes </a></li>
+                                </ul>
+                            </li>
+                            <!--<li><a href="contact-us.html">contact</a></li>-->
+                            <!--<li><a href="#">pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="service.html">Service</a></li>
+                                    <li><a href="elements.html">Elements</a></li>
+                                </ul>
+                            </li>-->
+			      <li><a href="../blood.html" style="font-size: 18px;color: #2f7a0e" ;  padding:5px>blood donation</a></li>
+                   <li><a href="../to_know.html" style="font-size: 18px;color: #2f7a0e" ;  padding:5px> To know </a></li>
+				   
+                            <li><a href="../profile.html"><i class="fa fa-user-circle-o fa-3x " aria-hidden="true"></i></a></i>
+				 <li><a href="../visitor/home_visitors.html" class="template-btn" style = "font-size:14px">sign out </a></li>       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- ------------ classes for main photo ----------------------------->
+    <section class="banner-area banner-bg about-page text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-text">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Area End -->
+
+<!--------------------------------------- the content of page --------------------------------------------------------->
+   
+<section class="feature-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+<!--******************* information and photo *********************************-->
+		
+
+   
+<!------------------------------------------------ blood ----------------------------------------------->
+   
+   
+ <center> <div class="col-md-10 blogShort">
+		    
+                     <h2 style="color: #c0c0c0">Blood Pressure</h2><br>
+                     <img src="../assets/images/breathing/9.jpg" width="500px" height="200px" alt="breath_img">
+                     
+                        
+                     <p> <br><br>Some people experience high blood pressure for years without feeling any symptom. 
+					 High and unattended blood pressure increases the risk of serious health problems, 
+					 such as a heart attack and stroke.High blood pressure often develops over many years,
+					 and ultimately it appears in almost all people. Fortunately, the disease is very easy 
+					 to detect, so control of it is possible with the help of doctors.
+					 
+					 <h5>Symptoms of high blood pressure</h5>
+					 The symptoms of high blood pressure do not appear in most people who suffer from it, 
+					 and also in cases where high blood pressure records values that are dangerous to their formation.
+                     In some patients, the following symptoms appear: Mild headaches , Dizziness Or excessive bleeding from the nose
+				      But these symptoms and signs usually appear when the disease reaches a more advanced stage, 
+					  to the extent that it poses a life threat.
+                     </p>
+ 
+                 </div>
+				
+				  <form action="#"> <br>
+       <label> Your Age : <input type="number" id="age" placeholder="as number" size="7" style="text-align: center ; color: #0000ff"></label>
+       <br><br>
+        <label>blood pressure , depending on your age <br><br>
+                Normal <input type="text" id="normal" size = "5"readonly style=" margin-left: 23px;  text-align: center ; color: #008000"></label><br><br>
+        <label> minimum <input type="text" id="min" size = "5"readonly style=" margin-left: 10px ; margin-right: 10px ; text-align: center ; color: #fecb01"></label><br><br>
+         <label> maximum  <input type="text" id="max" size = "5"readonly style=" margin-left: 8px ; text-align: center ; color: #ff0000 "></label>
+       <br><br>
+        <p id = "hint"></p>
+        <input class="template-btn" type="button" value="calculate"  id="cal" style="margin-left: 90px">
+   </form>
+
+		 </center>
+
+<br><br><br><br>
+
+ <!------------------------------------------- the bar ------------------------------------------------------------------------------------------>
+    <!-- Footer Area Starts -->
+    <footer class="footer-area section-padding" style=" background: -webkit-gradient(
+            linear, center top, center bottom,
+             color-stop(15%, #ffffff),
+	    color-stop(40%, #7af5ab),
+	    color-stop(60%, #60f558),
+	    color-stop(80%, #13b00b),
+            color-stop(98%, #137005) );"> <!-- for light color -->
+ <!-- <footer class="footer-area footer section-padding">-->
+		
+		<table border=0>
+		    <tr>
+			<th style="color:#2f7a0e ;font-size: 25px ; text-align: center ;">about us</th>
+			<th style="color:#2f7a0e ;font-size: 25px ; text-align: center ;">contact us</th>
+			
+		    </tr>
+		    <tr>
+			<td><center>You can trust us, with us for a better lifestyle, thank you for choosing</center></td>
+			<td style="padding-left: 60px"><br>If you want to inquire about something that does not hesitate you can
+			    contact us via the following numbers
+			    <br> <br>
+			</td>
+			
+		    </tr>
+		    <tr>
+			<td></td>
+			<td>
+			    <center>
+			    <span>
+				078 2582580
+			    </span><br>
+			    <span>
+				079 2581476
+			    </span></center>
+			    
+			</td>
+		    </tr>
+		</table>
+      
+    </footer>
+    <!-- Footer Area End -->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Javascript -->
+    <script src="../assets/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="../assets/js/vendor/bootstrap-4.1.3.min.js"></script>
+    <script src="../assets/js/vendor/wow.min.js"></script>
+    <script src="../assets/js/vendor/owl-carousel.min.js"></script>
+    <script src="../assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>
